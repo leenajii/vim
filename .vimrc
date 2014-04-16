@@ -3,9 +3,13 @@ call pathogen#incubate()
 
 syntax on
 filetype plugin indent on
+filetype plugin on
+
 set nocompatible
 
 set cursorline
+
+set clipboard=unnamed
 
 set tabstop=4
 set shiftwidth=4
@@ -32,7 +36,11 @@ set statusline+=%*
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
+
+autocmd BufWritePre *.pp :%s/\s\+$//e
+
+vmap <C-x> :!pbcopy<CR>
+vmap <C-c> :w !pbcopy<CR><CR>
 
 nnoremap <tab> %
 vnoremap <tab> %
