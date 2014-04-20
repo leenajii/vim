@@ -1,5 +1,4 @@
 execute pathogen#infect()
-call pathogen#incubate()
 
 syntax on
 filetype plugin indent on
@@ -63,3 +62,9 @@ let g:syntastic_auto_loc_list=1
 runtime macros/matchit.vim
 
 au FocusLost * :wa
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" COLOR
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:colorscheme elflord
+
