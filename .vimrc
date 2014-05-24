@@ -26,8 +26,6 @@ set incsearch
 set showmatch
 set hlsearch
 
-set undofile
-
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
