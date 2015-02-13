@@ -16,3 +16,6 @@
 [submodule "bundle/vim-leiningen"]
 	path = bundle/vim-leiningen
 	url = git://github.com/tpope/vim-leiningen.git
+[submodule "bundle/vim-projectionist"]
+	path = bundle/vim-projectionist
+	url = git://github.com/tpope/vim-projectionist.git
