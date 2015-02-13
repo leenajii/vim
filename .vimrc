@@ -35,9 +35,14 @@ set textwidth=79
 set formatoptions=qrn1
 
 autocmd BufWritePre *.pp :%s/\s\+$//e
+autocmd vimenter * NERDTree
 
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" KEY MAPPINGS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 nnoremap <tab> %
 vnoremap <tab> %
@@ -51,11 +56,14 @@ nnoremap <C-l> <C-w>l
 
 nnoremap gg=G <tab>gg
 
+"" Alt + s: search occurrences of the word under cursor
+nnoremap <A-s> :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
 let mapleader = ","
 
-let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
-let g:syntastic_auto_loc_list=1
+"let g:syntastic_enable_signs=1
+"let g:syntastic_quiet_warnings=1
+"let g:syntastic_auto_loc_list=1
            
 runtime macros/matchit.vim
 
