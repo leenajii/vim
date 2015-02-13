@@ -7,3 +7,6 @@
 [submodule "bundle/vim-clojure-highlight"]
 	path = bundle/vim-clojure-highlight
 	url = https://github.com/guns/vim-clojure-highlight.git
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git
