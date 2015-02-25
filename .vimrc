@@ -29,6 +29,8 @@ set hlsearch
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set laststatus=2
+set statusline+=%F
 
 set wrap
 set textwidth=79
