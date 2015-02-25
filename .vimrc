@@ -35,7 +35,6 @@ set textwidth=79
 set formatoptions=qrn1
 
 autocmd BufWritePre *.pp :%s/\s\+$//e
-autocmd vimenter * NERDTree
 
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>

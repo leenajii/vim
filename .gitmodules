@@ -1,9 +1,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/vim-clojure-highlight"]
 	path = bundle/vim-clojure-highlight
 	url = https://github.com/guns/vim-clojure-highlight.git
